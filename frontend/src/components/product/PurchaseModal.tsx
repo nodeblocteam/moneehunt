@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStellarWallet } from '../../context/StellarWalletContext';
-import { ShieldCheck, ShoppingCart, Lock, ArrowRight } from 'lucide-react';
+import { ShieldCheck, ShoppingCart } from 'lucide-react';
 
 interface Listing {
   id: string;
@@ -90,7 +90,7 @@ export const PurchaseModal: React.FC<PurchaseModalProps> = ({ listing, onClose, 
             <span style={{ fontWeight: 600, color: 'var(--accent-cyan)' }}>{listing.deliveryTime}</span>
           </div>
 
-          <div style={{ borderTop: '1px solid var(--border-color)', pt: '12px', paddingTop: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontSize: '1rem', fontWeight: 700, color: '#FFF' }}>Total XLM Deposit:</span>
             <span style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--accent-gold)' }}>
               {listing.priceXlm} XLM

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStellarWallet } from '../../context/StellarWalletContext';
-import { PlusCircle, Trash2, Shield, CheckCircle } from 'lucide-react';
+import { PlusCircle, Trash2, Shield } from 'lucide-react';
 
 interface TaskCreateFormProps {
   onTaskCreated: (task: any) => void;

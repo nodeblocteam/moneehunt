@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, ShoppingBag, Clock, CheckCircle } from 'lucide-react';
+import { ShoppingBag, Clock, CheckCircle } from 'lucide-react';
 
 export interface Listing {
   id: string;

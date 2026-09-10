@@ -26,7 +26,7 @@ export const StellarWalletProvider: React.FC<{ children: React.ReactNode }> = ({
   const [isConnected, setIsConnected] = useState<boolean>(false);
   const [publicKey, setPublicKey] = useState<string | null>(null);
   const [network] = useState<string>('Stellar Testnet');
-  const [xlmBalance, setXlmBalance] = useState<string>('2,450.00');
+  const [xlmBalance] = useState<string>('2,450.00');
   const [isConnecting, setIsConnecting] = useState<boolean>(false);
 
   // Auto-reconnect if session exists

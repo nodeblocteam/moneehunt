@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStellarWallet } from '../../context/StellarWalletContext';
-import { CheckCircle2, Clock, ShieldAlert, ArrowRight, Layers, FileCode2 } from 'lucide-react';
+import { CheckCircle2, Clock, Layers, FileCode2 } from 'lucide-react';
 
 interface Milestone {
   id: number;

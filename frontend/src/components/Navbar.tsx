@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStellarWallet } from '../context/StellarWalletContext';
-import { ShieldCheck, Wallet, ChevronRight, Layers, ShoppingBag, Users } from 'lucide-react';
+import { Wallet, Layers, ShoppingBag, Users } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: 'milestone' | 'product' | 'payroll';
