@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.png" alt="MoneeHunt Logo" width="220" />
+
 # MoneeHunt
 
 **Trustless Escrow Infrastructure for the Stellar Economy**
