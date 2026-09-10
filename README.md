@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" alt="MoneeHunt Logo" width="160" />
+<img src="frontend/assets/logo.svg" alt="MoneeHunt Logo" width="160" />
 
 # MoneeHunt
 

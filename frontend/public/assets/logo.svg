@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2631" />
+      <stop offset="100%" stop-color="#141B24" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6AA3A" />
+      <stop offset="100%" stop-color="#C78B27" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="96" fill="url(#bg)"/>
+
+  <!-- Target Scope Outer Ring -->
+  <circle cx="250" cy="225" r="150" fill="none" stroke="#2C3746" stroke-width="12"/>
+
+  <!-- Target Scope Crosshair Ticks -->
+  <line x1="250" y1="50" x2="250" y2="98" stroke="#2C3746" stroke-width="14" stroke-linecap="round"/>
+  <line x1="250" y1="352" x2="250" y2="400" stroke="#2C3746" stroke-width="14" stroke-linecap="round"/>
+  <line x1="75" y1="225" x2="123" y2="225" stroke="#2C3746" stroke-width="14" stroke-linecap="round"/>
+  <line x1="377" y1="225" x2="425" y2="225" stroke="#2C3746" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Gold Escrow Diamond -->
+  <rect x="180" y="155" width="140" height="140" rx="24" transform="rotate(45 250 225)" fill="url(#gold)"/>
+  
+  <!-- Artistic Geometric 'M' Monogram (Dark Vector Inlay) -->
+  <path d="M 195 270 V 170 L 250 215 L 305 170 V 270 M 215 270 V 195 L 250 225 L 285 195 V 270" 
+        fill="none" 
+        stroke="#1E2631" 
+        stroke-width="10" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Integrated Keyhole Lock Core -->
+  <path d="M 250 220 C 238 220, 228 230, 228 242 C 228 252, 234 260, 242 263 L 238 280 H 262 L 258 263 C 266 260, 272 252, 272 242 C 272 230, 262 220, 250 220 Z" 
+        fill="#1E2631"/>
+  <circle cx="250" cy="242" r="6" fill="url(#gold)"/>
+
+  <!-- MoneeHunt Typography -->
+  <text x="250" y="445" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#E2E8F0" text-anchor="middle" letter-spacing="1">MoneeHunt</text>
+</svg>
