@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#04060A" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#00BBF9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="500" height="500" rx="100" fill="url(#bg)"/>
+  <rect width="496" height="496" x="2" y="2" rx="98" fill="none" stroke="#1E293B" stroke-width="2" opacity="0.6"/>
+
+  <!-- Lock Shackle Arch -->
+  <path d="M 175 225 V 175 C 175 130, 325 130, 325 175 V 225" 
+        fill="none" 
+        stroke="url(#primary)" 
+        stroke-width="32" 
+        stroke-linecap="round"/>
+
+  <!-- Monogram M Vector -->
+  <path d="M 145 365 V 215 L 250 310 L 355 215 V 365" 
+        fill="none" 
+        stroke="url(#accent)" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Stellar Star Core Dot -->
+  <circle cx="250" cy="210" r="16" fill="#00F2FE"/>
+</svg>
