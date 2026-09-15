@@ -4,12 +4,12 @@
 
 ## Type of Change
 
-- [ ] 🚀 `feat`: New feature / component
-- [ ] 🐛 `fix`: Bug fix
-- [ ] 🛠️ `refactor`: Code refactoring / performance optimization
-- [ ] 📚 `docs`: Documentation updates
-- [ ] 🧪 `test`: Adding or updating test cases
-- [ ] 🔧 `chore`: Build system / dependency updates
+- [ ] `feat`: New feature / component
+- [ ] `fix`: Bug fix
+- [ ] `refactor`: Code refactoring / performance optimization
+- [ ] `docs`: Documentation updates
+- [ ] `test`: Adding or updating test cases
+- [ ] `chore`: Build system / dependency updates
 
 ## Scope
 

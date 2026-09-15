@@ -1,4 +1,4 @@
-# Contributing to MoneeHunt 🏹
+# Contributing to MoneeHunt
 
 First off, thank you for considering contributing to **MoneeHunt**! MoneeHunt is building open-source, trustless escrow infrastructure for the Stellar economy powered by Soroban smart contracts.
 
@@ -6,30 +6,29 @@ Whether you're fixing a bug in a Soroban WASM contract, improving frontend UX, o
 
 ---
 
-## 📜 Table of Contents
+## Table of Contents
 
-- [Code of Conduct](#-code-of-conduct)
-- [Recommended Open-Source Workflow](#-recommended-open-source-workflow)
-- [Getting Started](#-getting-started)
+- [Code of Conduct](#code-of-conduct)
+- [Recommended Open-Source Workflow](#recommended-open-source-workflow)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Local Setup](#local-setup)
-- [Development & Testing Guidelines](#-development--testing-guidelines)
+- [Development & Testing Guidelines](#development--testing-guidelines)
   - [Smart Contracts (Soroban / Rust)](#1-smart-contracts-soroban--rust)
   - [Frontend (React / TypeScript / Vite)](#2-frontend-react--typescript--vite)
-- [Commit Message Protocol](#-commit-message-protocol)
-- [Pull Request Protocol (The Pro Way)](#-pull-request-protocol-the-pro-way)
-- [Security Disclosure](#-security-disclosure)
-- [Bounties & Contributor Rewards](#-bounties--contributor-rewards)
+- [Commit Message Protocol](#commit-message-protocol)
+- [Pull Request Protocol (The Pro Way)](#pull-request-protocol-the-pro-way)
+- [Security Disclosure](#security-disclosure)
 
 ---
 
-## 🤝 Code of Conduct
+## Code of Conduct
 
 We are committed to providing a welcoming, inclusive, and respectful environment for all contributors. Please adhere to basic standards of professional etiquette and constructive code reviews.
 
 ---
 
-## 🔄 Recommended Open-Source Workflow
+## Recommended Open-Source Workflow
 
 MoneeHunt uses the **GitHub Fork & Pull Request Workflow** (GitHub Flow) backed by automated CI status checks.
 
@@ -55,7 +54,7 @@ Always create short, descriptive branch names prefixed by category:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Rust & Cargo** (latest stable toolchain with `wasm32-unknown-unknown` target)
@@ -79,7 +78,7 @@ Always create short, descriptive branch names prefixed by category:
 
 ---
 
-## 🧪 Development & Testing Guidelines
+## Development & Testing Guidelines
 
 ### 1. Smart Contracts (Soroban / Rust)
 
@@ -123,7 +122,7 @@ npm run build
 
 ---
 
-## 📝 Commit Message Protocol
+## Commit Message Protocol
 
 We enforce **Conventional Commits** to keep git history clean, searchable, and automated-release friendly.
 
@@ -148,7 +147,7 @@ We enforce **Conventional Commits** to keep git history clean, searchable, and a
 
 ---
 
-## 🏆 Pull Request Protocol (The Pro Way)
+## Pull Request Protocol (The Pro Way)
 
 To ensure your Pull Request is reviewed quickly and merged smoothly:
 
@@ -171,21 +170,13 @@ To ensure your Pull Request is reviewed quickly and merged smoothly:
 
 ---
 
-## 🔒 Security Disclosure
+## Security Disclosure
 
 Smart contract security is paramount in decentralized escrow systems.
 
 - **Do NOT open a public GitHub issue** for suspected security vulnerabilities or exploit vectors.
 - Please email security findings confidentially to **security@moneehunt.io** or reach out via our security contacts.
 - We acknowledge and reward responsible disclosures!
-
----
-
-## 💰 Bounties & Contributor Rewards
-
-MoneeHunt dogfoods its own infrastructure!
-- Open issues tagged `bounty` or `good-first-issue` come with XLM rewards locked in Soroban milestone escrows.
-- Upon PR merge, the milestone reward is released directly to your Stellar wallet address.
 
 ---
 

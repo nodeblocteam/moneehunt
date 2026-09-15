@@ -259,7 +259,6 @@ We welcome contributions from the developer community! Please review our **[Cont
 - Setting up your local development environment for Soroban contracts and Next.js/Vite frontend.
 - Following our **Conventional Commits** standard.
 - Submitting Pull Requests and running test suites.
-- Claiming bounty escrows on open issues.
 
 ```bash
 1. Fork the repository
