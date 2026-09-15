@@ -19,7 +19,6 @@ Whether you're fixing a bug in a Soroban WASM contract, improving frontend UX, o
 - [Commit Message Protocol](#-commit-message-protocol)
 - [Pull Request Protocol (The Pro Way)](#-pull-request-protocol-the-pro-way)
 - [Security Disclosure](#-security-disclosure)
-- [Bounties & Contributor Rewards](#-bounties--contributor-rewards)
 
 ---
 
@@ -178,14 +177,6 @@ Smart contract security is paramount in decentralized escrow systems.
 - **Do NOT open a public GitHub issue** for suspected security vulnerabilities or exploit vectors.
 - Please email security findings confidentially to **security@moneehunt.io** or reach out via our security contacts.
 - We acknowledge and reward responsible disclosures!
-
----
-
-## 💰 Bounties & Contributor Rewards
-
-MoneeHunt dogfoods its own infrastructure!
-- Open issues tagged `bounty` or `good-first-issue` come with XLM rewards locked in Soroban milestone escrows.
-- Upon PR merge, the milestone reward is released directly to your Stellar wallet address.
 
 ---
 
