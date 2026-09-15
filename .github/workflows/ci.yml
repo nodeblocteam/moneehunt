@@ -29,9 +29,8 @@ jobs:
 
       - name: Run Soroban Contract Tests
         run: |
-          cd contracts/milestone-escrow && cargo test
-          cd ../product-escrow && cargo test
-          cd ../batch-payroll && cargo test
+          cd contracts
+          cargo test
 
   build-frontend:
     name: Build & Lint Frontend
