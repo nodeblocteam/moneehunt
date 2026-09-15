@@ -10,6 +10,10 @@ Commerce. Bounties. Payroll. All on-chain. All trustless.
 
 **Built on Stellar · Powered by Soroban · Settled in XLM**
 
+[![Live dApp](https://img.shields.io/badge/Live_dApp-moneehunt.vercel.app-00F2FE?style=for-the-badge&logo=vercel)](https://moneehunt.vercel.app/)
+
+**[Launch Live App (https://moneehunt.vercel.app/)](https://moneehunt.vercel.app/)**
+
 </div>
 
 ---
