@@ -254,11 +254,20 @@ cargo test
 
 ## Contributing
 
+We welcome contributions from the developer community! Please review our **[Contributing Guidelines](CONTRIBUTING.md)** for details on:
+
+- Setting up your local development environment for Soroban contracts and Next.js/Vite frontend.
+- Following our **Conventional Commits** standard.
+- Submitting Pull Requests and running test suites.
+- Claiming bounty escrows on open issues.
+
+```bash
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit changes (`git commit -m 'Add your feature'`)
-4. Push to branch (`git push origin feature/your-feature`)
+2. Create a feature branch (git checkout -b feat/your-feature)
+3. Commit changes (git commit -m 'feat(scope): your feature description')
+4. Push to branch (git push origin feat/your-feature)
 5. Open a Pull Request
+```
 
 ---
 
