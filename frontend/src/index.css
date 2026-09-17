@@ -211,3 +211,86 @@ h1, h2, h3, h4 {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+/* ─── Payroll: Dropzone ─────────────────────────────────── */
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  border: 2px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: rgba(22, 30, 46, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+.dropzone:hover {
+  border-color: rgba(230, 170, 58, 0.4);
+  background: rgba(22, 30, 46, 0.6);
+}
+.dropzone-active {
+  border-color: var(--accent-gold);
+  background: rgba(230, 170, 58, 0.06);
+  box-shadow: 0 0 40px var(--accent-gold-glow);
+}
+.dropzone-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(230, 170, 58, 0.1);
+  border: 1px solid rgba(230, 170, 58, 0.25);
+  margin-bottom: 20px;
+}
+
+/* ─── Payroll: Table ────────────────────────────────────── */
+.payroll-table-wrapper {
+  overflow-x: auto;
+  border-radius: 14px;
+}
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.payroll-table thead th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.02);
+}
+.payroll-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-main);
+}
+.payroll-table tbody tr {
+  transition: background 0.2s ease;
+}
+.payroll-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.payroll-table tfoot td {
+  padding: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ─── Payroll: Executing Pulse ──────────────────────────── */
+@keyframes executePulse {
+  0%, 100% { box-shadow: 0 4px 16px var(--accent-gold-glow); }
+  50% { box-shadow: 0 4px 32px rgba(230, 170, 58, 0.5); }
+}
+.btn-executing {
+  animation: executePulse 1.5s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.85;
+}

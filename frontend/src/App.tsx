@@ -6,8 +6,8 @@ import { TaskList } from './components/milestone/TaskList';
 import { TaskCreateForm } from './components/milestone/TaskCreateForm';
 import { ListingCard } from './components/product/ListingCard';
 import { PurchaseModal } from './components/product/PurchaseModal';
-import { Plus, Users, ArrowUpRight } from 'lucide-react';
-import type { Task, Listing } from './types';
+import { PayrollDashboard } from './components/payroll/PayrollDashboard';
+import { Plus, ArrowUpRight } from 'lucide-react';
 
 const INITIAL_TASKS: Task[] = [
   {
@@ -147,26 +147,9 @@ export function AppContent() {
             </div>
           )}
 
-          {/* Tab 3: Corporate Payroll Overview */}
+          {/* Tab 3: Corporate Payroll Dashboard */}
           {activeTab === 'payroll' && (
-            <div className="glass-card" style={{ padding: '40px', textAlign: 'center' }}>
-              <Users size={48} color="var(--accent-gold)" style={{ marginBottom: '16px', opacity: 0.9 }} />
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '8px', color: '#FFF' }}>Batch Payroll Escrow Engine</h3>
-              <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', maxWidth: '580px', margin: '0 auto 28px' }}>
-                Upload CSV payroll manifests and disburse XLM salaries to hundreds of employees in a single atomic Soroban transaction.
-              </p>
-              
-              <div style={{ display: 'inline-flex', gap: '16px', background: 'rgba(255, 255, 255, 0.03)', padding: '20px 32px', borderRadius: '16px', border: '1px solid var(--border-color)' }}>
-                <div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Contract State</div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--accent-emerald)' }}>Active on Testnet</div>
-                </div>
-                <div style={{ borderLeft: '1px solid var(--border-color)', paddingLeft: '16px' }}>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Contract ID</div>
-                  <div style={{ fontSize: '0.9rem', fontWeight: 600, fontFamily: 'monospace', color: 'var(--accent-cyan)' }}>C_BATCH_PAYROLL...</div>
-                </div>
-              </div>
-            </div>
+            <PayrollDashboard />
           )}
         </div>
       </main>
