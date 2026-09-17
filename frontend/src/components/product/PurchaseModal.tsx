@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
-import { useStellarWallet } from '../../context/StellarWalletContext';
+import { useStellarWallet } from '../../context/useStellarWallet';
 import { ShieldCheck, ShoppingCart } from 'lucide-react';
-
-interface Listing {
-  id: string;
-  title: string;
-  category: string;
-  priceXlm: number;
-  seller: string;
-  description: string;
-  deliveryTime: string;
-  imageUrl: string;
-}
+import type { Listing } from '../../types';
 
 interface PurchaseModalProps {
   listing: Listing | null;
@@ -42,7 +32,7 @@ export const PurchaseModal: React.FC<PurchaseModalProps> = ({ listing, onClose, 
       onPurchaseSuccess(listing.id);
       onClose();
     } catch (err) {
-      console.error(err);
+      console.error('Error processing purchase:', err);
     } finally {
       setIsProcessing(false);
     }

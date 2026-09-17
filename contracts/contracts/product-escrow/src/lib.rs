@@ -135,7 +135,8 @@ impl ProductEscrowContract {
 
         // Transfer XLM from buyer to contract.
         let token_client = token::Client::new(&env, &listing.token);
-        token_client.transfer(&buyer, &env.current_contract_address(), &listing.price);
+        let contract_addr = env.current_contract_address();
+        token_client.transfer(&buyer, &contract_addr, &listing.price);
 
         listing.buyer = buyer;
         listing.status = ListingStatus::InEscrow;
@@ -163,11 +164,8 @@ impl ProductEscrowContract {
 
         // Release funds to seller.
         let token_client = token::Client::new(&env, &listing.token);
-        token_client.transfer(
-            &env.current_contract_address(),
-            &listing.seller,
-            &listing.price,
-        );
+        let contract_addr = env.current_contract_address();
+        token_client.transfer(&contract_addr, &listing.seller, &listing.price);
 
         listing.status = ListingStatus::Delivered;
         env.storage()

@@ -182,11 +182,8 @@ impl MilestoneEscrowContract {
 
         // Transfer XLM from creator to this contract.
         let token_client = token::Client::new(&env, &task.token);
-        token_client.transfer(
-            &task.creator,
-            &env.current_contract_address(),
-            &task.total_amount,
-        );
+        let contract_addr = env.current_contract_address();
+        token_client.transfer(&task.creator, &contract_addr, &task.total_amount);
 
         task.status = TaskStatus::Funded;
         env.storage().instance().set(&DataKey::Task(task_id), &task);
@@ -228,11 +225,8 @@ impl MilestoneEscrowContract {
 
         // Release funds for this milestone.
         let token_client = token::Client::new(&env, &task.token);
-        token_client.transfer(
-            &env.current_contract_address(),
-            &task.solver,
-            &milestone.amount,
-        );
+        let contract_addr = env.current_contract_address();
+        token_client.transfer(&contract_addr, &task.solver, &milestone.amount);
 
         // Update milestone status.
         milestone.status = MilestoneStatus::Approved;

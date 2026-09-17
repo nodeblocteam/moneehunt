@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useStellarWallet } from '../context/StellarWalletContext';
+import { useStellarWallet } from '../context/useStellarWallet';
 import { WalletModal } from './wallet/WalletModal';
 import { Wallet, Layers, ShoppingBag, Users, ShieldCheck, QrCode, ExternalLink, Sparkles } from 'lucide-react';
 

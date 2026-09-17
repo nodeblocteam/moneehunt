@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useStellarWallet } from '../../context/StellarWalletContext';
-import type { WalletType } from '../../context/StellarWalletContext';
+import { useStellarWallet } from '../../context/useStellarWallet';
+import type { WalletType } from '../../types';
 import { Wallet, ShieldCheck, QrCode, ExternalLink, Sparkles, AlertCircle, Check } from 'lucide-react';
 
 interface WalletModalProps {
@@ -67,8 +67,9 @@ export const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => 
     try {
       await connectWallet(type);
       onClose();
-    } catch (err: any) {
-      setErrorMsg(err.message || 'Failed to connect wallet');
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Failed to connect wallet';
+      setErrorMsg(message);
     }
   };
 
