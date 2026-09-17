@@ -109,7 +109,8 @@ impl BatchPayrollContract {
 
         // Transfer total XLM from company to contract.
         let token_client = token::Client::new(&env, &token);
-        token_client.transfer(&company, &env.current_contract_address(), &total);
+        let contract_addr = env.current_contract_address();
+        token_client.transfer(&company, &contract_addr, &total);
 
         let payroll_id: u64 = env
             .storage()

@@ -1,17 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Clock, CheckCircle } from 'lucide-react';
-
-export interface Listing {
-  id: string;
-  title: string;
-  category: string;
-  priceXlm: number;
-  seller: string;
-  description: string;
-  deliveryTime: string;
-  imageUrl: string;
-  isPurchased?: boolean;
-}
+import type { Listing } from '../../types';
 
 interface ListingCardProps {
   listing: Listing;

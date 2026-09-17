@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useStellarWallet } from '../../context/StellarWalletContext';
+import { useStellarWallet } from '../../context/useStellarWallet';
 import { PlusCircle, Trash2, Shield } from 'lucide-react';
+import type { Task } from '../../types';
 
 interface TaskCreateFormProps {
-  onTaskCreated: (task: any) => void;
+  onTaskCreated: (task: Task) => void;
   onClose: () => void;
 }
 
@@ -44,7 +45,7 @@ export const TaskCreateForm: React.FC<TaskCreateFormProps> = ({ onTaskCreated, o
         milestonesCount: milestones.length,
       });
 
-      const newTask = {
+      const newTask: Task = {
         id: 'TASK-' + Math.floor(1000 + Math.random() * 9000),
         title,
         contractor: contractor || 'G...CONTRACTOR',

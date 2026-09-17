@@ -4,12 +4,12 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { TaskList } from './components/milestone/TaskList';
 import { TaskCreateForm } from './components/milestone/TaskCreateForm';
-import { ListingCard, type Listing } from './components/product/ListingCard';
+import { ListingCard } from './components/product/ListingCard';
 import { PurchaseModal } from './components/product/PurchaseModal';
 import { PayrollDashboard } from './components/payroll/PayrollDashboard';
 import { Plus, ArrowUpRight } from 'lucide-react';
 
-const INITIAL_TASKS = [
+const INITIAL_TASKS: Task[] = [
   {
     id: 'TASK-8492',
     title: 'Soroban Escrow Smart Contract Audit',
@@ -20,9 +20,9 @@ const INITIAL_TASKS = [
     status: 'FUNDED',
     createdAt: '2026-09-08',
     milestones: [
-      { id: 1, description: 'Static Analysis & Vulnerability Scan', percent: 30, amountXlm: 375, status: 'COMPLETED' as const },
-      { id: 2, description: 'State Archival & TTL Stress Testing', percent: 40, amountXlm: 500, status: 'IN_PROGRESS' as const },
-      { id: 3, description: 'Final Audit Certificate & Report', percent: 30, amountXlm: 375, status: 'PENDING' as const },
+      { id: 1, description: 'Static Analysis & Vulnerability Scan', percent: 30, amountXlm: 375, status: 'COMPLETED' },
+      { id: 2, description: 'State Archival & TTL Stress Testing', percent: 40, amountXlm: 500, status: 'IN_PROGRESS' },
+      { id: 3, description: 'Final Audit Certificate & Report', percent: 30, amountXlm: 375, status: 'PENDING' },
     ]
   },
   {
@@ -35,8 +35,8 @@ const INITIAL_TASKS = [
     status: 'FUNDED',
     createdAt: '2026-09-09',
     milestones: [
-      { id: 1, description: 'Design System & Component Architecture', percent: 50, amountXlm: 400, status: 'IN_PROGRESS' as const },
-      { id: 2, description: 'Freighter Wallet Connection & Soroban RPC', percent: 50, amountXlm: 400, status: 'PENDING' as const },
+      { id: 1, description: 'Design System & Component Architecture', percent: 50, amountXlm: 400, status: 'IN_PROGRESS' },
+      { id: 2, description: 'Freighter Wallet Connection & Soroban RPC', percent: 50, amountXlm: 400, status: 'PENDING' },
     ]
   }
 ];
@@ -76,12 +76,12 @@ const INITIAL_LISTINGS: Listing[] = [
 
 export function AppContent() {
   const [activeTab, setActiveTab] = useState<'milestone' | 'product' | 'payroll'>('milestone');
-  const [tasks, setTasks] = useState(INITIAL_TASKS);
+  const [tasks, setTasks] = useState<Task[]>(INITIAL_TASKS);
   const [listings, setListings] = useState<Listing[]>(INITIAL_LISTINGS);
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [selectedListing, setSelectedListing] = useState<Listing | null>(null);
 
-  const handleTaskCreated = (newTask: any) => {
+  const handleTaskCreated = (newTask: Task) => {
     setTasks([newTask, ...tasks]);
   };
 

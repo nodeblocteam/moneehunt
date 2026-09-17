@@ -1,26 +1,7 @@
 import React, { useState } from 'react';
-import { useStellarWallet } from '../../context/StellarWalletContext';
+import { useStellarWallet } from '../../context/useStellarWallet';
 import { CheckCircle2, Clock, Layers, FileCode2 } from 'lucide-react';
-
-interface Milestone {
-  id: number;
-  description: string;
-  percent: number;
-  amountXlm: number;
-  status: 'PENDING' | 'IN_PROGRESS' | 'COMPLETED';
-}
-
-interface Task {
-  id: string;
-  title: string;
-  contractor: string;
-  totalXlm: number;
-  fundedXlm: number;
-  currentMilestone: number;
-  milestones: Milestone[];
-  status: string;
-  createdAt: string;
-}
+import type { Task } from '../../types';
 
 interface TaskListProps {
   tasks: Task[];
@@ -40,7 +21,7 @@ export const TaskList: React.FC<TaskListProps> = ({ tasks, onApproveMilestone })
       });
       onApproveMilestone(taskId, milestoneId);
     } catch (err) {
-      console.error(err);
+      console.error('Error approving milestone:', err);
     } finally {
       setApprovingId(null);
     }
